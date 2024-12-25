@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <center>
+        <h1>Tic Tac Toe</h1>
+        <div class="ctn" id="ctn1">
+        
+        <table id="box_ctn">
+            <tr>
+                <td><div class="box" id="box1"></div></td>
+                <td><div class="box" id="box2"></div></td>
+                <td><div class="box" id="box3"></div></td>
+            </tr>
+            <tr>
+                <td><div class="box" id="box4"></div></td>
+                <td><div class="box" id="box5"></div></td>
+                <td><div class="box" id="box6"></div></td>
+            </tr>
+            <tr>
+                <td><div class="box" id="box7"></div></td>
+                <td><div class="box" id="box8"></div></td>
+                <td><div class="box" id="box9"></div></td>
+            </tr>
+        </table>
+        
+        <button id="continue">CONTINUE</button>
+        </div>
+        <div class="ctn" id="ctn2">
+        <div id="turn">Turn: <span id="turnDisplay">PLAYER 1</span></div>
+        <div id="displayCtn"><div id="display"></div></div>
+        <table id="scoreBoard">
+            <tr>
+                <td class="sb">PLAYER 1</td>
+                <td class="sb">PLAYER 2</td>
+            </tr>
+            <tr>
+                <td class="sb" id="p1Score"></td>
+                <td class="sb" id="p2Score"></td>
+            </tr>
+        </table>
+        <button id="resetScore">RESET SCORE</button>
+    </center>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

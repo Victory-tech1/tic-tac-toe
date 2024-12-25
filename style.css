@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.ctn{
+    width: 50%;
+    border: solid 0px;
+}
+#ctn1{
+    float: left;
+}
+#ctn2{
+    float: right;
+}
+h1{
+    background-color: yellow;
+    height: 60px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+}
+#display{
+    border: solid 1px black;
+    background-color: yellow;
+    width: 428px;
+    height: 60px;
+    font-size: 40px;
+    border-radius: 20px;
+    line-height: 60px;
+    margin: 10px 0;
+}
+#box_ctn{
+    border: solid 1px black;
+    border-radius: 20px;
+    padding: 3px;
+    width: fit-content;
+    background-color: red;
+}
+.box{
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    border-radius: 20px;
+    margin: 3px;
+    font-family: monospace;
+    font-size: 100px;
+    text-align: center;
+    background-color: yellow;
+}
+#turn{
+    font-size: 30px;
+}
+button{
+    height: 50px;
+    width: 170px;
+    font-size: 20px;
+    margin: 20px;
+    background-color: lightgrey;
+}
+#scoreBoard{
+    border: solid 1px black;
+    border-radius: 20px;
+    padding: 3px;
+    width: fit-content;
+    background-color: red;
+}
+.sb{
+    display: inline-block;
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    margin: 3px;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+    background-color: yellow;
+    line-height: 30px;
+}
+#p1Score, #p2Score{
+    height: 100px;
+    line-height: 100px;
+    font-size: 80px;
+}
+@media only screen and (max-width: 880px) {
+    *{
+        margin: 0;
+    }
+    .box{
+        height: 100px;
+        width: 100px;
+    }
+    #display{
+        width: 320px;
+    }
+    .sb{
+        width: 150px;
+        font-size: 20px;
+    }
+    #p1Score, #p2Score{
+        font-size: 60px;
+    }
+}
+@media only screen and (max-width: 675px) {
+    *{
+        margin: 0;
+    }
+    h1{
+        margin: 0;
+    }
+    .ctn{
+        padding: 0;
+        width: 100%;
+    }
+    #ctn1{
+        float: none;
+    }
+    #ctn2{
+        float: none;
+    }
+    #display{
+        width: 200px;
+        height: 40px;
+    }
+    .box{
+        margin: 0 2px;
+        width: 70px;
+        height: 70px;
+        line-height: 25vw;
+        margin: 0;
+    }
+    #box_ctn{
+        width: min-content;
+        margin-top: 10px;
+    }
+    #turn{
+        font-size: 20px;
+    }
+    #scoreBoard{
+        width: max-content;
+        border: none;
+    }
+    .sb{
+        width: 100px;
+        font-size: 20px;
+        margin: 0;
+        border: solid 1px;
+    }    
+    #p1Score, #p2Score{
+        font-size: 40px;
+        height: 60px;
+        line-height: 60px;
+    }
+    button{
+        height: 30px;
+        width: 120px;
+        font-size: 15px;
+        margin: 20px;
+        background-color: lightgrey;
+    }
+}
+@media only screen and (max-width: 450px) {
+    *{
+        margin: 0;
+        width: 100vw;
+    }
+    body{
+        height: 100vw;
+    }
+    .ctn{
+        padding: 0;
+        width: 100%;
+    }
+    #ctn1{
+        float: none;
+    }
+    #ctn2{
+        float: none;
+    }
+    #displayCtn{
+        width: 90vw;
+    }
+    #display{
+        width: 75vw;
+    }
+    .box{
+        width: 25vw;
+        height: 25vw;
+        line-height: 25vw;
+    }
+    #box_ctn{
+        margin: 10px auto;
+        width: min-content;
+    }
+    #turn{
+        font-size: 30px;
+    }
+    #scoreBoard{
+        width: max-content;
+        border: none;
+    }
+    .sb{
+        width: 35vw;
+        margin: 0;
+    }
+}
